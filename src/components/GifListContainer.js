@@ -21,10 +21,10 @@ function GifListContainer(){
     
        
   return (
-        <div>
-            <GifSearch handleSubmit={handleSubmit} />
+        <div style={{display: "flex"}} >
+            
             <GifList gif={dataResp} />           
-
+            <GifSearch handleSubmit={handleSubmit} />
         </div>
   )
 }

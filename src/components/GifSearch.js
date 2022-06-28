@@ -11,9 +11,11 @@ function GifSearch({handleSubmit}){
         }
         return(
         <>
-        <form onSubmit={handleSubmitForm}> 
-            <input  type="text" placeholder="Enter your search" onChange={handleInputChange} value={searchInput}></input>
-            <button type="submit" >Search</button>
+        <form  className="d-flex" onSubmit={handleSubmitForm}> 
+            <label>Enter a Search Term: </label>
+            <br></br>
+            <input className="me-2" type="search" placeholder="Enter your search" onChange={handleInputChange} value={searchInput}></input>
+            <button variant="outline-success" type="submit" >Find Gifs</button>
         </form>
         </>
     )
